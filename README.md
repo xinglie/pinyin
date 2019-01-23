@@ -3,13 +3,15 @@
 
 使用示例
 ```js
-Utils.CSpell.getSpell('阿里巴巴欢迎您');//[e,a],li,ba,ba,huan,ying,nin
+import Pinyin from 'pinyin'
+console.log(Pinyin.getSpell('阿里巴巴欢迎您'));//[e,a],li,ba,ba,huan,ying,nin
 ```
 
 因为“阿”是多音字，因此结果是 [e,a],li...这样子的，当您需要遇到多音字自已处理时，可以这样：
 
 ```js
-Utils.CSpell.getSpell('阿里巴巴欢迎您',function(charactor,spell){
+import Pinyin from 'pinyin'
+Pinyin.getSpell('阿里巴巴欢迎您',function(charactor,spell){
     console.log(charactor,spell);
     return spell[1];
 });
