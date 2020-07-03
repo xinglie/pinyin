@@ -3,8 +3,7 @@ author:kooboy_li@163.com
 MIT licensed
 */
 
-let group = /[\da-r]{3}/g,
-    base = 19968,
+let base = 19968,
     middle = (40896 - base) / 2;
 let EMPTY = '';
 let COMA = ',';
