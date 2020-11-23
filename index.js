@@ -869,6 +869,12 @@ fn(SDB.m, 1);
 fn(SDB.a);
 SDB = null;
 export default {
+    /**
+     * 将一个汉字或词组转换为拼音
+     * @param {string}      chars           需要转换的汉字
+     * @param {function}    polyphone       处理多音字的函数，不传时使用 [] 连接多音字拼音
+     * @param {string}      spliter         拼音字符之间的连接字符，默认为英文逗号
+     */
     getSpell(chars, polyphone, spliter) {
         let cToS = DB.cToS;
         let res = [],
@@ -889,7 +895,7 @@ export default {
                 res.push(ch);
             }
         }
-        return res.join(spliter || COMA);
+        return res.join(typeof spliter === 'string' ? spliter : COMA);
     },
     getChars(spell) {
         let sToC = DB.sToC;

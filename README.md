@@ -27,6 +27,16 @@ Pinyin.getSpell('阿里巴巴欢迎您',function(charactor,spell){
 });
 ```
 
+当获取词语或者名字的拼音时，多个拼音使用英文逗号来连接，也可以自定义连接多个拼音的连接字符，例如要将拼音直接拼接，不加入特殊字符传入 `''` 为第三个参数：
+
+```js
+import { getSpell } from 'jian-pinyin'
+getSpell('阿里巴巴欢迎您',function(charactor,spell){
+    console.log(charactor,spell);
+    return spell[1];
+}, '');
+```
+
 ## 如果浏览器支持`localeCompare`
 > 只有部分浏览器支持中文按拼音排序，如果浏览器支持则可以使用`Pinyin.lcTranslate()`来获取拼音
 
