@@ -889,7 +889,7 @@ export default {
                 res.push(ch);
             }
         }
-        return res.join(spliter || COMA);
+        return res.join(typeof spliter === 'string' ? spliter : COMA);
     },
     getChars(spell) {
         let sToC = DB.sToC;
