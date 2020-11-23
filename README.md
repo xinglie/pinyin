@@ -1,3 +1,5 @@
+![npm tag](https://img.shields.io/npm/v/jian-pinyin.svg)
+
 ## 汉字转拼音
 支持20870个汉字，包含完整的多音字
 
