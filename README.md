@@ -1,18 +1,26 @@
+![npm tag](https://img.shields.io/npm/v/jian-pinyin.svg)
+
 ## 汉字转拼音
 支持20870个汉字，包含完整的多音字
 
 > 常用汉字区间为\u4e00-\u9fa5，共20902个汉字，该库只支持20870个汉字的拼音，未收录的汉字是："乥乲兙兛兝兞兡兣兺匁厼叾哛唜唟喸嗧囕夞巼怾旕朩朰栍桛椧烪猠瓧瓩瓰瓱瓲瓼甅硛硳穒縇莻虄襨迲闏鞥龥"
 
-使用示例
+### 安装
+
+```sh
+npm i --save jian-pinyin
+```
+
+### 使用示例
 ```js
-import Pinyin from 'pinyin'
+import Pinyin from 'jian-pinyin'
 console.log(Pinyin.getSpell('阿里巴巴欢迎您'));//[e,a],li,ba,ba,huan,ying,nin
 ```
 
 因为“阿”是多音字，因此结果是 [e,a],li...这样子的，当您需要遇到多音字自已处理时，可以这样：
 
 ```js
-import Pinyin from 'pinyin'
+import Pinyin from 'jian-pinyin'
 Pinyin.getSpell('阿里巴巴欢迎您',function(charactor,spell){
     console.log(charactor,spell);
     return spell[1];
@@ -20,7 +28,7 @@ Pinyin.getSpell('阿里巴巴欢迎您',function(charactor,spell){
 ```
 
 ## 如果浏览器支持`localeCompare`
-> 只有部分浏览器支持中文按拼音排序，如果浏览器支持则可以使用`lc.js`来获取拼音
+> 只有部分浏览器支持中文按拼音排序，如果浏览器支持则可以使用`Pinyin.lcTranslate()`来获取拼音
 
 ## 压缩说明
 网上常见的方案的都是字典表的思路，把所有汉字的拼音罗列一遍，我也是这样的思路。因为要达到能处理20870个汉字，同时要保障网络传输，本人想办法写了一个压缩算法，目前这个版本是压缩好的，带自解压功能，仅60-70kb，远远小于网上的其它方案的实现。
