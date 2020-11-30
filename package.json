@@ -1,6 +1,20 @@
 {
     "main": "main.js",
     "name": "jian-pinyin",
-    "description": "高度压缩的拼音方案",
-    "version": "0.2.2"
+    "description": "包含20870个汉字的拼音，完整多音字，无第三方依赖，压缩前仅72KB",
+    "version": "0.2.3",
+    "license": "MIT",
+    "homepage": "https://github.com/xinglie/pinyin#readme",
+    "bugs": {
+        "url": "https://github.com/xinglie/vue/issues"
+    },
+    "files": [
+        "index.js",
+        "lc.js",
+        "main.js"
+    ],
+    "keywords": [
+        "pinyin",
+        "拼音"
+    ]
 }
