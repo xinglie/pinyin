@@ -1,7 +1,7 @@
-![npm tag](https://img.shields.io/npm/v/jian-pinyin.svg)
+<a href="https://www.npmjs.com/package/jian-pinyin" rel="npmjs">![npm tag](https://img.shields.io/npm/v/jian-pinyin.svg?color=success)</a>
 
 ## 汉字转拼音
-支持20870个汉字，包含完整的多音字
+支持20870个汉字，包含完整的多音字，无第三方依赖，压缩前仅72KB。
 
 > 常用汉字区间为\u4e00-\u9fa5，共20902个汉字，该库只支持20870个汉字的拼音，未收录的汉字是："乥乲兙兛兝兞兡兣兺匁厼叾哛唜唟喸嗧囕夞巼怾旕朩朰栍桛椧烪猠瓧瓩瓰瓱瓲瓼甅硛硳穒縇莻虄襨迲闏鞥龥"
 
