@@ -1,4 +1,4 @@
-<a href="https://www.npmjs.com/package/jian-pinyin" rel="npmjs">![npm tag](https://img.shields.io/npm/v/jian-pinyin.svg?color=success)</a>
+[![npm tag](https://img.shields.io/npm/v/jian-pinyin.svg?color=success)](https://www.npmjs.com/package/jian-pinyin) [![License](https://img.shields.io/badge/license-MIT-orange.svg)](https://opensource.org/licenses/MIT "License") [![download](https://img.shields.io/npm/dm/jian-pinyin.svg)](https://www.npmjs.com/package/jian-pinyin)
 
 ## 汉字转拼音
 支持20870个汉字，包含完整的多音字，无第三方依赖，压缩前仅72KB。
